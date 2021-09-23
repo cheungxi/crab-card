@@ -2,17 +2,24 @@
   "name": "crab-card-app",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "serve": "vite preview --host 0.0.0.0 " 
+    "serve": "vite preview --host 0.0.0.0 ",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"
   },
   "dependencies": {
     "vue": "^3.2.6",
+    "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.6.1",
     "@vue/compiler-sfc": "^3.2.6",
-    "vite": "^2.5.4"
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^7.18.0",
+    "vite": "^2.5.4",
+    "vite-plugin-eslint": "^1.3.0"
   }
 }

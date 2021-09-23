@@ -1,9 +1,7 @@
-import { createStore } from "vuex";
+// import { createStore } from "vuex";
 
-const store = createStore({
-    state () {
-        return {
-
-        }
-    }
-})
+// const store = createStore({
+//   state() {
+//     return {};
+//   },
+// });
